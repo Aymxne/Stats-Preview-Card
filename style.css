@@ -1,0 +1,208 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    color: whitesmoke;
+    font-family: 'Lato' , sans-serif;
+}
+
+body{
+    background-color: #0a0c1b;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.container{
+    padding: 2rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container .card{
+    margin: auto;
+    height: 100%;
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.3s;
+   
+   
+}
+
+.container .card .card-top{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    min-height: 250px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.container .card .card-top::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(163,93,209,0.6), rgba(163,93,209,0.6));
+}
+
+.container .card .card-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+   
+}
+
+.container .card .card-bottom{
+    padding: 1rem 3rem;
+    background: #1c1938;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.container .card .card-bottom .content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   transition: all ease-in-out 0.3s;
+}
+
+.container .card .card-bottom .content h2{
+    text-align: center;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    margin: 2rem 0;
+}
+
+.container .card .card-bottom .content h2 span{
+    color: rgb(163, 93, 209);
+}
+
+.container .card .card-bottom .content p{
+    text-align: center;
+    line-height: 1.7;
+    color: rgb(192, 192, 192);
+    font-family: 'Lato' , sans-serif;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.container .card .card-bottom .content .stats-container ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.container .card .card-bottom .content .stats-container ul li{
+    margin: 1rem auto;
+}
+
+.container .card .card-bottom .content .stats-container ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(192, 192, 192);
+}
+
+.container .card .card-bottom .content .stats-container ul li a span{
+    margin-bottom: .5rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+@media screen and (min-width: 992px){
+
+    .container .card{
+        margin: auto;
+        height: 100%;
+        max-height: 500px;
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;       
+        transition: all ease-in-out 0.3s;
+    }
+
+    .container .card .card-bottom .content h2{
+        text-align: left;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin: 2rem 0;
+    }
+
+    .container .card .card-bottom .content p{
+        text-align: left;
+        line-height: 1.7;
+        color: rgb(192, 192, 192);
+        font-family: 'Lato' , sans-serif;
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+    }
+
+    .container .card .card-bottom{
+        padding: 4rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .container .card .card-bottom .content .stats-container{
+        width: 100%;
+    }
+
+    .container .card .card-bottom .content .stats-container ul{
+        display: flex;
+        transition: all ease-in-out 0.3s;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        list-style: none;
+    
+    }
+
+    .container .card .card-top{
+        width: 100%;
+        height: 100%;
+        border-radius: 0 1rem 1rem 0;
+        min-height: 250px;
+        object-fit: contain;
+        overflow: hidden;
+    }
+    
+    .container .card .card-top img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+       
+    }
+
+    .container .card .card-bottom .content .stats-container ul li{
+        margin: 0;
+    }
+
+    .container .card .card-bottom .content .stats-container{
+        margin-top: 2rem;
+    }
+}
+    
